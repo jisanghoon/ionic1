@@ -20,10 +20,7 @@ export class HomePage {
       .then(uri => {
         (<any>window).FilePath.resolveNativePath(uri, (result) => {
           this.nativepath = result;
-          ID3(uri, function(err, tags) {
-   alert(tags.artist);
-   
-});
+         
           this.audioplay();
         }, (err) => {
           alert(err);
@@ -34,16 +31,15 @@ export class HomePage {
   }
 
   audioplay() {
+     ID3("http://192.168.0.16/1.mp3", function (err, tags) {
+            alert(tags.artist);
+          });
+
     var pathalone = this.nativepath.substring(8);
-    
-
-  
-
     this.file = new MediaPlugin(pathalone, (status) => {
 
     });
 
-    ID3.
     this.file.play();
   }
 }
