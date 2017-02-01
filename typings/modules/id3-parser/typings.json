@@ -1,0 +1,10 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/dvdcxn/typed-id3-parser/1175da90172733ab25ddb521305b880249e82931/typings.json",
+    "raw": "registry:npm/id3-parser#1.0.1+20160526190936",
+    "main": "index.d.ts",
+    "browser": "index.d.ts",
+    "name": "id3-parser"
+  }
+}

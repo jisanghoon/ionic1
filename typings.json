@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "id3-parser": "registry:npm/id3-parser#1.0.1+20160526190936"
+  }
+}
